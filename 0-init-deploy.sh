@@ -8,6 +8,7 @@ load_setting_file()
 
 copy_setup_scripts()
 {
+  echo "Copy Scripts.."
   sudo cp -R /tmp/aurora-rails-5-v3-web-server/ /home/$DEPLOY_USER_NAME/aurora-rails-5-v3-web-server
   sudo rm -rfv /tmp/aurora-rails-5-v3-web-server/ > /dev/null
   sudo rm -rfv /home/$DEPLOY_USER_NAME/aurora-rails-5-v3-web-server/0-machine-setting.sh > /dev/null
@@ -36,11 +37,10 @@ run_node_boot_script()
 
 write_ssh_key()
 {
-  sudo mkdir -p /home/$DEPLOY_USER_NAME/.ssh
-
   sudo rm -rfv /home/$DEPLOY_USER_NAME/.ssh/$GIT_REPO_DEPLOY_PRIVATE_KEY_NAME
   sudo rm -rfv /home/$DEPLOY_USER_NAME/.ssh/$GIT_REPO_DEPLOY_PRIVATE_KEY_NAME.pub
-  sudo ssh-keygen -t rsa -f $HOME/.ssh/$GIT_REPO_DEPLOY_PRIVATE_KEY_NAME -q -N ""
+  sudo mkdir -p /home/$DEPLOY_USER_NAME/.ssh
+  sudo ssh-keygen -t rsa -f /home/$DEPLOY_USER_NAME/.ssh/$GIT_REPO_DEPLOY_PRIVATE_KEY_NAME -q -N ""
 
   sudo chown -R $DEPLOY_USER_NAME:$DEPLOY_USER_NAME /home/$DEPLOY_USER_NAME/.ssh
   sudo chmod 700 /home/$DEPLOY_USER_NAME/.ssh
