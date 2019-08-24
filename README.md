@@ -1,10 +1,9 @@
 
 # Aurora Rails 5 v3 Web Server
-# 極光 Rails 5 專屬伺服器 安裝包
 
-* Version: 1.1.0 ( 20190825 )
+* Version: 1.1.0 ( 2019/08/25 )
 
-![](https://i.imgur.com/MxzRD0P.jpg)
+![](https://i.imgur.com/T9ptu0C.png)
 
 # 系統要求
 
@@ -13,12 +12,12 @@
 
 # 安裝項目
 
-* 系統更新、必要設定、必備套件、node-js、Image Magick
-* 建立一組給應用程式用的部署帳號 / 預設名為 apps
-* Ruby 2.6.3 程式環境 / with rbenv
-* Rails 5.2、http、mailgun、backup、whenever Gems
-* Nginx Extras 與 Passenger 6.0.x
-* 安裝 MariaDB 10.3 資料庫系統
+* 系統更新、必要設定、必備套件
+* nodejs 8.x / image magick
+* ruby 2.6.3 ( rbenv )
+* rails 5.2.x / http / mailgun / backup / whenever
+* nginx-extras + passenger 6.0.x
+* maria db 10.3.x
 * 基本的 SSH 安全設定，但不含 iptable 或 ufw 防火牆設定，請自行設定
 * 安裝輔助工具在部署帳號環境上
 
