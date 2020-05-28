@@ -1,7 +1,7 @@
 
 # Aurora Rails 5 v3 Web Server
 
-* Version: 1.1.0 ( 2019/08/25 )
+* Version: 1.2.0 ( 2020/05/28 )
 
 ![](https://i.imgur.com/T9ptu0C.png)
 
@@ -14,7 +14,7 @@
 
 * 系統更新、必要設定、必備套件
 * nodejs 8.x / image magick
-* ruby 2.6.3 ( rbenv )
+* ruby 2.6.6 ( rbenv )
 * rails 5.2.x / http / mailgun / backup / whenever
 * nginx-extras + passenger 6.0.x
 * maria db 10.3.x
